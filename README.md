@@ -41,3 +41,26 @@ This is my Ansible Repository
    34  git push origin main
    35  history
    ```
+
+### Tutorial 2 (Initial Ansible Commands)
+```
+36  dnf install ansible
+   37  nano inventory
+   38  ls
+   39  cat inventory 
+   40  git status
+   41  git add .
+   42  git status
+   43  git commit -m "first version of inventory file is added"
+   44  git push origin main
+   45  which ansible
+   46  ansible all ~/.ssh/id_ed25519 -i inventory -m ping
+   47  ansible all ~/.ssh -i inventory -m ping
+   48  ssh-keygen -t ed25519 -C "Ansible"
+   49  ssh-copy-id -i ~/.ssh/ansible.pub 192.168.56.121
+   50  ssh-copy-id -i ~/.ssh/ansible.pub 192.168.56.122
+   51  ssh-copy-id -i ~/.ssh/ansible.pub 192.168.56.123
+   52  ansible all ~/.ssh/ansible -i inventory -m ping
+   53  ansible all --key-file ~/.ssh -i inventory -m ping
+   54  ansible all --key-file ~/.ssh/ansible -i inventory -m ping
+   ```
