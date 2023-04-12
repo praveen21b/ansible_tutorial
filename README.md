@@ -44,7 +44,7 @@ This is my Ansible Repository
 
 ### Tutorial 2 (Initial Ansible Commands)
 ```
-36  dnf install ansible
+   36  dnf install ansible
    37  nano inventory
    38  ls
    39  cat inventory 
@@ -64,3 +64,7 @@ This is my Ansible Repository
    53  ansible all --key-file ~/.ssh -i inventory -m ping
    54  ansible all --key-file ~/.ssh/ansible -i inventory -m ping
    ```
+
+    To shorten ansible all --key-file ~/.ssh/ansible -i inventory -m ping
+    -   create ansible.cfg on the local folder the original copy lies in /etc/ansible.cfg,
+        but this file overridden by the local config file.
