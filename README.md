@@ -68,3 +68,26 @@ This is my Ansible Repository
     To shorten ansible all --key-file ~/.ssh/ansible -i inventory -m ping
     -   create ansible.cfg on the local folder the original copy lies in /etc/ansible.cfg,
         but this file overridden by the local config file.
+
+```
+    git status
+   58  git add .
+   59  gir commit -m "Upadted Tutorial 2 initial Commands"
+   60  git commit -m "Upadted Tutorial 2 initial Commands"
+   61  git push origin main
+   62  nano ansible.cfg
+   63  ls
+   64  ls /etc/ansible
+   65  ansible all -m ping
+   66  cat ansible.cfg 
+   67  nano ansible.cfg
+   68  ansible all -m ping
+   69  git add .
+   70  git commit -m "Added command shortening message in ReadMe file"
+   71  git push origin main
+   72  ansible all --list-hosts
+   73  ansible all -m gather-facts
+   74  ansible all -m gather_facts
+   75  ansible all -m gather_facts --limit 192.168.56.121
+   76  history
+```
